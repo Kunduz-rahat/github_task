@@ -3,7 +3,7 @@ import {useParams, Link} from 'react-router-dom'
 import axios from "axios";
 
 import Layout from "../../ components/Layout";
-import NotFound from "../../ components/Not Found";
+
 
 const Repositories = () => {
   const [projects, setProjects] = useState([])
@@ -12,9 +12,7 @@ const Repositories = () => {
 axios(`https://api.github.com/users/${username}/repos`)
   .then(({data}) => setProjects(data))
   }, [username])
-  if (!projects){
-    return <NotFound/>
-  }
+
   return (
     <Layout>
       <ul className="list-group">

@@ -13,7 +13,7 @@ const Readme = () => {
       {
         headers : {Accept: "application/vnd.github.VERSION.raw"} //заголовки запросов на сервер
       }).then(({data}) => setReadme(data))
-  }, [])
+  }, [username, project])
 
   axios(``)
   return (
