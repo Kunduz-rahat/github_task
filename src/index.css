@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap');
+body{
+  margin: 0;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.readme pre{
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    border-radius: 6px;
+    background-color: #ccc;
+}
+.readme h2, h3{
+    color: indianred;
+}
+
+.home{
+    height: 100vh;
+}
