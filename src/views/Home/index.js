@@ -6,6 +6,7 @@ import github from './github.jfif'
 
 
 const Home = () => {
+
   const [username, setUserName] = useState('')
   const history = useHistory()
   const handleChange = (e) => {
@@ -26,7 +27,7 @@ const Home = () => {
       backgroundImage: `url(${github})`
     }}>
       <div>
-        <input className='form-control' type="text" onChange={handleChange} onKeyPress={handlePress}
+        <input className='form-control me-2' type="text" onChange={handleChange}  onKeyPress={handlePress}
                placeholder='user name'/>
       </div>
     </div>
